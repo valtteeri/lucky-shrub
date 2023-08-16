@@ -1,0 +1,94 @@
+
+/* Container to lock size of the page and body to give background color */
+.container{
+    max-width: 1300px;
+    margin: auto;
+    align-items: center;
+    padding: 1em;
+}
+body{
+    background-color: #da7e8a;
+    color: #ffffff;
+}
+
+/*  Header CSS for nav bar and image  */
+
+nav{
+    flex: 0 0 100%;
+    display: flex; 
+    justify-content: center;
+}
+nav ul{
+    background-color: #daa07e;
+    border-radius: 1em;
+    padding-right: 2.5em;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style-type: none;
+    padding: 1em;
+}
+
+nav ul li:hover {
+    transform: translateY(-0.1em);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5em;
+    transition: transform 1s;
+}
+
+div.logo img{
+    width: 5em;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main CSS */
+section, article {
+    background-color: #daa07e;
+    border-radius: 0.8em;
+    margin: 1em;
+    padding: 0.5em;
+}
+.banner {
+    margin-top: 1em;
+}
+.columns{
+    display: flex;
+    justify-content: space-around;
+}
+div.columns section{
+    flex-basis: 30%;
+}
+section img {
+    width: 100%;
+}
+/* Footer CSS */
+footer{
+    display: flex;
+}
+.footerInfo{
+    flex-basis: 50%;
+    padding: 1em;
+}
+div.footerInfo img{
+    width: 3em;
+    height: auto;
+    align-self: left;
+    
+}
+.align-right{
+    text-align: right;
+}
+
+@media (max-width: 800px) {
+    .columns {
+      flex-direction: column;
+    }
+}
